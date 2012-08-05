@@ -110,6 +110,8 @@ body{
 	margin-top: 5px;
 	width: 100%;
 	bottom: 25px;
+	background: url(../img/header.jpg) right center repeat-y;	
+	background-size: 100% 100%;
 }
 
 .questions{
@@ -119,6 +121,7 @@ body{
 	height: 100%;
 	margin-right: 5px;
 	margin-left: 10px;
+	background: rgba(225, 242, 206, 0.5);
 }
 
 .question{
@@ -132,12 +135,14 @@ body{
 	border: 1px solid #cecece;
 	height: 100%;
 	padding: 0;
+	background: rgba(225, 242, 206, 0.5);
+	font-size: 1.2em;
 }
 
 .answer{
-	background-color: #e1f2ce;
 	padding: 5px;
 	margin: 5px;
+	color: black;
 }
 
 /*footer*/
