@@ -1,0 +1,102 @@
+body{
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.hidden{
+	display:none;
+}
+
+.logo{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 30%;
+	height: 60px;
+	border: 1px solid #44C88C;
+	border-right: none;
+	background: url("images/ui-bg_highlight-soft_75_44c859_1x100.png") repeat-x scroll 50% 50% #87C690;
+	}
+
+.logo>h1{
+	color: #8D0C1E;
+	font-size: 1.8em;
+}
+
+/*menu*/
+.tabs{
+	border: 1px solid #44C88C;
+	border-left: none;
+	list-style-type: none;
+	position: fixed;
+	left: 30%;
+	width: 70%;
+	top:0;
+	height: 60px;
+	background: url("images/ui-bg_highlight-soft_75_44c859_1x100.png") repeat-x scroll 50% 50% #87C690;
+}
+
+.tabs>ul{
+	float: left;
+	width: 100%;
+	margin-top: 25px;
+	height: 60px;
+}
+
+.tab-item{
+	list-style-type: none;
+	border: 1px solid #CC711B;
+	border-bottom: 0;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	
+	-moz-border-top-left-radius: 6px;
+	-moz-border-top-right-radius: 6px;
+	
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	background: #CC711B;
+	
+	float:	left;
+	margin: 5px;	
+	padding: 5px;
+	font-weight: bold;
+}
+
+.tab-item:hover{
+	background-color: #DD9856;
+}
+
+.active{
+	background-color: #793E07;
+}
+
+.tab-item >a, .tab-item>a:hover, .tab-item>a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+.content{
+	position: fixed;
+	left: 0;
+	top: 60px;
+	margin-top: 5px;
+	width: 100%;
+}
+
+.questions{
+	float:left;
+	width: 30%;
+	border: 1px solid black;
+	background-color: pink;
+}
+
+.answers{
+	margin-left: 31%;
+	width: 68%;
+	border: 1px solid black;
+	background-color: yellow;
+}
