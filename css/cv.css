@@ -83,7 +83,9 @@ body{
 }
 
 .tab-item:hover{
-	background-color: rgba(255, 186, 132, 0.4)
+	background-color: rgba(255, 186, 132, 0.4);
+	cursor: hand;
+	cursor: pointer;
 }
 
 .tab-item >a:link{

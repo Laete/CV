@@ -18,6 +18,11 @@ $(document).on("click", ".question", function(event){
 	$(".answer").height(height - 20);
 });
 
+$(document).on("click", ".tab-item", function(event){
+	var url = $(event.target).children("a").attr("href");
+	window.location = url;
+});
+
 $(window).resize(function(){
 	var height = $("#general").height();
 	$(".answer").height(height - 20);
