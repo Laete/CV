@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Co	ntent-Type" content="text/html; charset=UTF-8" />
+		<title>Анкета в Школу разработки интерфейсов</title>
+		<link type="text/css" href="css/jquery-ui-1.8.22.custom.css" rel="stylesheet" />
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+		<link type="text/css" href="css/cv.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/cars.js"></script>
+		<script type="text/javascript" src="js/cv.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<h1 class="header-item">CV. Карпелевич Анна</h1>
+			</div>
+			<div id="menu" class="tabs">	
+				<ul>
+					<li class="tab-item header-item active"><a href="index.html" id="tab-general">Общие вопросы</a></li>
+					<li class="tab-item header-item"><a href="experience.html" id="tab-experience">Опыт разработки</a></li>
+					<li class="tab-item header-item"><a href="technical.html" id="tab-technical">Технические вопросы</a></li>
+					<li class="tab-item header-item"><a href="#" id="tab-comments">Комментарии</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="comments" class="content">
+			<div class="questions">
+				<div class="accordion">
+					<h4><a href="#"  class="question" id="с-question-1">Про дизайн</a></h4>
+					<div>
+						<p>Боже, почему такой убогий дизайн?</p>
+						
+					</div>
+					<h4><a href="#" class="question" id="с-question-2">Про интерактив</a></h4>
+					<div>
+						<p>Почему accordion так странно ведет себя?</p>
+						
+					</div>
+					<h4><a href="#" class="question" id="с-question-3">Про принципы</a></h4>
+					<div>
+						<p>Как-то у вас все ... не оптимизировано!</p>
+					</div>
+					<h4><a href="#" class="question" id="с-question-4">Про БЭМ</a></h4>
+					<div>
+						<p>Вы где-нибудь использовали БЭМ-методологию?</p>
+					</div>
+					<h4><a href="#" class="question" id="с-question-5">Про библиотеки</a></h4>
+					<div>
+						<p>Почему вы не воспользовались библиотеками для улучшения интерфейса, например, bootstrap?</p>
+					</div>
+					<h4><a href="#" class="question" id="с-question-6">Про доступность</a></h4>
+					<div>
+						<p>А почему не учтены особенностями людей с ограниченными возможностями?</p>
+					</div>
+					<h4><a href="#" class="question" id="с-question-7">Про цели</a></h4>
+					<div>
+						<p>Вы уверены, что мы хотим видеть вас у себя?</p>
+					</div>
+				</div>
+			</div>
+			<div class="answers">
+				<div class="answer hidden" id="с-answer-1">
+					<p>Ну плохо у меня с дизайном, и рисовать я умею только на бумаге! Но я надеюсь научиться!</p>
+					
+				</div>
+				<div class="answer hidden" id="с-answer-2">
+					<p>Подозреваю, что вы работаете в Firebug.</p>
+				</div>
+				
+				<div class="answer hidden" id="с-answer-3">
+					<p>KISS!</p>
+				</div>
+				
+				<div class="answer hidden" id="с-answer-4">
+					<p>Я попыталась, но с учетом простоты и нерасширяемости задачи, не стала заморачиваться.
+					Можно ее увидеть, например, в меню.</p>
+				</div>
+				
+				<div class="answer hidden" id="с-answer-5">
+					<p>Они не гибкие и меня это расстраивает. Чуть что не по правилам - и верстка расползается коленками назад. И цвета менять долго и нудно.</p>
+				</div>
+				
+				<div class="answer hidden" id="с-answer-6">
+					<p>Я надеюсь, что таких нет среди проверяющих - а сказать по совести, было лень...</p>
+				</div>
+
+				<div class="answer hidden" id="с-answer-7">
+					<p>Во всяком случае, я уверена, что я хочу видеть себя у вас!</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<p>В дизайне использованы: <a href="http://jqueryui.com/home">jQueryUI</a>, <a href="http://colorschemedesigner.com/">Color Scheme Designer</a>, <a href="http://www.freewebheaders.com/">Free Web Headers</a>
+			<span><a href="print.html">Версия для печати</>
+			</p>
+		</div>
+	</body>
+</html>	

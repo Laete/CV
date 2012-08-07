@@ -93,6 +93,7 @@ body{
 
 .tab-item>a:hover, .tab-item>a:visited{
 	text-decoration: none;
+	color: black;
 }
 
 .active{
@@ -145,6 +146,10 @@ body{
 	color: black;
 }
 
+.answer dt{
+	font-weight: bold;
+}
+
 /*footer*/
 #footer{
 	position: fixed;
@@ -172,4 +177,9 @@ body{
 
 #footer a:hover{
 	text-decoration: underline
+}
+
+#print{
+	float: right;
+	margin-right: 5px;
 }

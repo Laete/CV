@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Co	ntent-Type" content="text/html; charset=UTF-8" />
+		<title>Анкета в Школу разработки интерфейсов</title>
+		<link type="text/css" href="css/jquery-ui-1.8.22.custom.css" rel="stylesheet" />
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+		<link type="text/css" href="css/cv.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/cars.js"></script>
+		<script type="text/javascript" src="js/cv.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<h1 class="header-item">CV. Карпелевич Анна</h1>
+			</div>
+			<div id="menu" class="tabs">	
+				<ul>
+					<li class="tab-item header-item active"><a href="index.html" id="tab-general">Общие вопросы</a></li>
+					<li class="tab-item header-item"><a href="experience.html" id="tab-experience">Опыт разработки</a></li>
+					<li class="tab-item header-item"><a href="#" id="tab-technical">Технические вопросы</a></li>
+					<li class="tab-item header-item"><a href="comments.html" id="tab-comments">Комментарии</a></li>
+				</ul>
+			</div>
+		</div>
+						
+		<div id="technical" class="content">
+			<div class="questions">
+				<div class="accordion">
+					<h4><a href="#"  class="question" id="t-question-1">Про дизайн</a></h4>
+					<div>
+						<p>Боже, почему такой убогий дизайн?</p>
+						
+					</div>
+					<h4><a href="#" class="question" id="t-question-2">Про интерактив</a></h4>
+					<div>
+						<p>Почему accordion так странно ведет себя?</p>
+						
+					</div>
+					<h4><a href="#" class="question" id="t-question-3">Про машинки</a></h4>
+					<div>
+						<p>Предположим, что мы представляем автосалон по продаже японских и немецких автомобилей. У нас есть базовые классы и примеры их использования. Допишите недостающий код.</p>
+					</div>
+					<h4><a href="#" class="question" id="t-question-4">Про консоль</a></h4>
+					<div>
+						<p>Найдите все текстовые файлы (*.txt), в имени которых содержится «yandex», а в содержимом — «школа разработки интерфейсов».</p>
+					</div>
+					<h4><a href="#" class="question" id="t-question-5">Про БЭМ</a></h4>
+					<div>
+						<p>Вы где-нибудь использовали БЭМ-методологию?</p>
+					</div>
+					<h4><a href="#" class="question" id="t-question-6">Про библиотеки</a></h4>
+					<div>
+						<p>Почему вы не воспользовались библиотеками для улучшения интерфейса, например, bootstrap?</p>
+					</div>
+					<h4><a href="#" class="question" id="t-question-7">Про доступность</a></h4>
+					<div>
+						<p>А почему не учтены особенностями людей с ограниченными возможностями?</p>
+					</div>
+					<h4><a href="#" class="question" id="t-question-8">Про обновление</a></h4>
+					<div>
+						<p>А вы заметили, что при обновлении страницы мы снова попадаем в первое меню? Это неудобно!</p>
+					</div>
+					<h4><a href="#" class="question" id="t-question-9">Про цели</a></h4>
+					<div>
+						<p>Вы уверены, что мы хотим видеть вас у себя?</p>
+					</div>
+				</div>
+			</div>
+			<div class="answers">
+				<div class="answer hidden" id="t-answer-1">
+					<p>Ну плохо у меня с дизайном, и рисовать я умею только на бумаге! Но я надеюсь научиться!</p>
+					
+				</div>
+				<div class="answer hidden" id="t-answer-2">
+					<p>Подозреваю, что вы работаете в Firebug.</p>
+				</div>
+				
+				<div class="answer hidden" id="t-answer-3">
+					<div class="control-group">
+						<label class="control-label" for="info">Информация о машинах</label>
+						<div class="controls">
+							<div class="input-append">
+								<input class="span9" id="info" size="16" type="text"><button class="btn" type="button" id="getinfo">Получить</button>
+				</div>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label" for="info">Информация о машинах-2</label>
+						<div class="controls">
+							<div class="input-append">
+								<input class="span9" id="simpleinfo" size="16" type="text"><button class="btn" type="button" id="getsimpleinfo">Получить</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label" for="info">Подробная информация о машинах</label>
+						<div class="controls">
+							<div class="input-append">
+								<input class="span9" id="detailedinfo" size="16" type="text"><button class="btn" type="button" id="getdetailedinfo">Получить</button>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="control-group">
+						<label class="control-label" for="info">Список авто</label>
+						<div class="controls">
+							<div class="input-append">
+								<input class="span9" id="list" size="16" type="text"><button class="btn" type="button" id="getlist">Получить</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label" for="info">Список авто из Германии</label>
+						<div class="controls">
+							<div class="input-append">
+								<input class="span9" id="gerlist" size="16" type="text"><button class="btn" type="button" id="getgerlist">Получить</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label" for="info">Список авто из Японии</label>
+						<div class="controls">
+							<div class="input-append">
+								<input class="span9" id="japlist" size="16" type="text"><button class="btn" type="button" id="getjaplist">Получить</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label" for="info">Список авто с ценой в рублях</label>
+						<div class="controls">
+							<div class="input-append">
+								<input class="span9" id="listprice" size="16" type="text"><button class="btn" type="button" id="getlistprice">Получить</button>
+							</div>
+						</div>
+					</div>
+					
+					<h3>Необходимые пояснения</h3>
+					<p>Код скрипта находится в файле js/cars.js</p>
+					<p>Для большей наглядности некоторые задания были выполнены не так,
+						как требовалось. В частности, вывод результатов был изменен, и вывод 
+						происходит не в консоль, а на страницу. В резльтате в функциях list() не
+						возвращается this и не получится сделать вызовы в цепочках. Для 
+					упрощения я не стала с этим воевать</p>
+				</div>
+				
+				<div class="answer hidden" id="t-answer-4">
+					<p>Unix-style: grep -r --include=*yandex*.txt школа разработки интерфейсов *</p>
+				</div>
+				
+				<div class="answer hidden" id="t-answer-5">
+					<p>Я попыталась, но с учетом простоты и нерасширяемости задачи, не стала заморачиваться.
+					Можно ее увидеть, например, в меню.</p>
+				</div>
+				
+				<div class="answer hidden" id="t-answer-6">
+					<p>Они не гибкие и меня это расстраивает. Чуть что не по правилам - и верстка расползается коленками назад. И цвета менять долго и нудно.</p>
+				</div>
+				
+				<div class="answer hidden" id="t-answer-7">
+					<p>Я надеюсь, что таких нет среди проверяющих - а сказать по совести, было лень...</p>
+				</div>
+				<div class="answer hidden" id="t-answer-8">
+					<p>Зато всего одна страница=)</p>
+				</div>
+				<div class="answer hidden" id="t-answer-9">
+					<p>Во всяком случае, я уверена, что я хочу видеть себя у вас!</p>
+				</div>
+			</div>
+		</div>		
+		<div id="footer">
+			<p>В дизайне использованы: <a href="http://jqueryui.com/home">jQueryUI</a>, <a href="http://colorschemedesigner.com/">Color Scheme Designer</a>, <a href="http://www.freewebheaders.com/">Free Web Headers</a>
+			<span><a href="print.html">Версия для печати</>
+			</p>
+		</div>
+	</body>
+</html>	

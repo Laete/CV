@@ -6,6 +6,8 @@ $(function() {
 		collapsible: true,
 		header: '>h4'
 	});
+	
+	$("input[type='text']").val('');
 });
 
 $(document).on("click", ".question", function(event){
@@ -21,18 +23,30 @@ $(window).resize(function(){
 	$(".answer").height(height - 20);
 });
 
-$(document).on("click", ".tab-item > a", function(event){
-	event.preventDefault();	
-	$(".tab-item").removeClass("active");
-	$(this).parent().addClass("active");
-	
-	var id = "#"+$(this).attr("id").replace("tab-", "");
-	$(".content").hide();
-	$(id).show();
-	$(id).find(".accordion").accordion({
-		autoHeight: false,
-		active: false,
-		collapsible: true,
-		header: '>h4'
-	});
+$(document).on("click", "#getinfo", function(){
+	$("#info").val(bmw.getInfo() + ", "+audi.getInfo()+", "+toyota.getInfo());
+});
+
+$(document).on("click", "#getsimpleinfo", function(){
+	$("#simpleinfo").val("Car: "+bmw + ", "+audi+", "+toyota);
+});
+
+$(document).on("click", "#getdetailedinfo", function(){
+	$("#detailedinfo").val(bmw.getDetailedInfo()+", "+audi.getDetailedInfo()+", "+toyota.getDetailedInfo());
+});
+
+$(document).on("click", "#getlist", function(){
+	$("#list").val(yandex.list());
+});
+
+$(document).on("click", "#getgerlist", function(){
+	$("#gerlist").val(yandex.listByCountry('Germany'));
+});
+
+$(document).on("click", "#getjaplist", function(){
+	$("#japlist").val(yandex.listByCountry('Japan'));
+});
+
+$(document).on("click", "#getlistprice", function(){
+	$("#listprice").val(yandex.listRubles());
 });
