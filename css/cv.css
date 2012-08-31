@@ -185,3 +185,17 @@ body{
 	float: right;
 	margin-right: 5px;
 }
+
+/*Printing version*/
+td{
+	margin: 5px;
+	padding: 5px;
+}
+
+td:last-child{
+	width: 70%;
+}
+
+td:first-child{
+	width: 30%;
+}

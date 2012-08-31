@@ -19,8 +19,10 @@ $(document).on("click", ".question", function(event){
 });
 
 $(document).on("click", ".tab-item", function(event){
-	var url = $(event.target).children("a").attr("href");
-	window.location = url;
+	if ($(event.target).is("li")){
+		var url = $(event.target).children("a").attr("href");
+		window.location = url;
+	}
 });
 
 $(window).resize(function(){
